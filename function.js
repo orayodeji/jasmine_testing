@@ -20,11 +20,9 @@ function replaceWith(string,charToReplace,charToReplaceWith){
     
         function acceptNumbersOnly(){
             for(let i = 0; i < arguments.length; i++){
-            if (typeof arguments[i] !== "number"){ return false}
+          return typeof arguments[i] == "number" && !isNaN(arguments[i])
             }
-            return true
-            };
-
+};
 
             function mergeArr(arr1,arr2){
 
