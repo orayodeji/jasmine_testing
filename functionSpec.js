@@ -25,7 +25,7 @@ describe("acceptNumbersOnly",function(){
         expect(acceptNumbersOnly(1,2,3,4,5,6,7)).toBe(true)
     })
     it("only returns boolean", function(){
-        expect(acceptNumbersOnly(1,2,3,4,5,6,NaN)).toBe(true)
+        expect(acceptNumbersOnly(1,2,3,4,5,6,NaN)).toBe(false)
     })
 
 })
